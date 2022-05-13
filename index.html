@@ -16,6 +16,15 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 </head>
 <body>
+    <div id="root">
+
+        <ul v-if="emails.length >= 10">
+            <li v-for="email in emails">
+            {{ email }}
+            </li>
+        </ul>
+
+    </div>
     
     <script src="js/script.js"></script>
 </body>
